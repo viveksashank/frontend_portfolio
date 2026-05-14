@@ -1,0 +1,15 @@
+"use client"
+import {use context} from "react"
+import profileContext from '../core/context/profileContext'
+export default function InvestorsDetailPage(){
+    const {email,password} = useContext{profileContext};
+    return <div>
+    <div>
+    {email}
+    </div>
+    <div>
+    {password}
+    </div>
+    </div>
+
+}
